@@ -1,0 +1,29 @@
+{
+  "name": "learnforceone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 32200",
+    "lint": "next lint",
+    "clean_windows": "(if exist node_modules rd /s /q node_modules) && (if exist .next rd /s /q .next) && (if exist out rd /s /q out) && (if exist package-lock.json del package-lock.json)",
+    "clean_linux": "rm -rf node_modules .next out && rm -f package-lock.json"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "typescript": "^5"
+  }
+}
